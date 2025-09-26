@@ -116,26 +116,20 @@ const App = () => {
 
               {/* Enhanced Call-to-Action Button */}
               <div className="relative group">
-                {/* Holographic Border Effect */}
-                <div className="absolute -inset-2 bg-gradient-to-r from-color-1/30 via-color-5/30 to-color-6/30 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="relative w-full max-w-md mx-auto block"
+                  className="relative w-full max-w-md mx-auto block py-5 px-8 bg-gradient-to-r from-color-1 to-color-5 text-white font-bold text-lg rounded-2xl hover:from-color-1/90 hover:to-color-5/90 transition-all duration-300 transform hover:scale-[1.02] shadow-lg overflow-hidden"
                 >
-                  <div className="absolute -inset-1 bg-gradient-to-r from-color-1 via-color-5 to-color-6 rounded-2xl blur opacity-70 group-hover:opacity-100 transition-all duration-300"></div>
-                  <div className="relative py-5 px-8 bg-gradient-to-r from-color-1 to-color-5 text-white font-bold text-lg rounded-2xl hover:from-color-1/90 hover:to-color-5/90 transition-all duration-300 transform group-hover:scale-105 shadow-2xl">
-                    <div className="flex items-center justify-center gap-3">
-                      <span>Join Waitlist</span>
-                      <div className="w-6 h-6 border-2 border-white/50 rounded-full flex items-center justify-center group-hover:border-white transition-colors">
-                        <svg className="w-3 h-3 transform group-hover:translate-x-0.5 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
+                  <div className="flex items-center justify-center gap-3">
+                    <span>Join Waitlist</span>
+                    <div className="w-6 h-6 border-2 border-white/50 rounded-full flex items-center justify-center hover:border-white transition-colors">
+                      <svg className="w-3 h-3 transform hover:translate-x-0.5 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
                     </div>
-                    {/* Shine Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
                   </div>
+                  {/* Subtle Shine Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/3 to-transparent skew-x-12 -translate-x-full hover:translate-x-full transition-transform duration-1000 rounded-2xl"></div>
                 </button>
 
                 {/* Floating Benefits */}
